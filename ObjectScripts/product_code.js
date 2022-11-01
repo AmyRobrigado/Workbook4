@@ -1,8 +1,8 @@
 "use strict";
 //Supply Code
 function parsePartCode(Code) {
-   let supplyCode = code.substring();
-   let productNumber = code.productNumber.substring();
+   let supplyCode = code.substring(0,supplyCode);
+   let productNumber = code.productNumber.substring(productNumber);
    let size = code.substring();
 }
 
@@ -12,7 +12,7 @@ let partCode1 = {
     size: "LG",
 };
 
-let code1 = "LG:18390803:9270206472-LG";
+let code1 = "LG-18390803:9270206472-LG";
 
 
 
