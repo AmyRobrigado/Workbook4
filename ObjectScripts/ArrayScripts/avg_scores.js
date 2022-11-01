@@ -3,8 +3,6 @@
 
     let myScores = [92, 99, 84, 76, 89, 99,100];
     let yourScores = [82, 98, 94, 88, 92, 100, 100];
-    let numMyScores = myScores.length;
-    let numYourScores = yourScores.length;
 
     function getAverage(scores) {
         
