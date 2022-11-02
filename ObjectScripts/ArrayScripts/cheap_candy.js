@@ -6,7 +6,7 @@ let products = [
     {product: "Peanut M&Ms", price: 2.89},
     {product: "Swedish Fish", price: 3.79},
 
-    // TODO: fill the array with 10 candies of various price ranges
+
     ];
 
     function getCandy(products) 
