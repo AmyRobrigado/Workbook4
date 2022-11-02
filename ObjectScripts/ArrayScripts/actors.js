@@ -42,18 +42,60 @@ console.log(getAcademyMembers(academyMembers, "187"));
 
 //-------------------------------------------------------------------------
 
-function getAcademyFilms(academyMembers, films ) 
+function getAcademyFilms(academyMembers) 
 {
     let idNum = academyMembers.length;
     let three = [];
 
-for(let i = 0; i < idNum; i++){
+for(let i = 0; i < idNum; i++)
+{
 
-    if (academyMembers[i].films>3)
+    if (academyMembers[i].films.length >= 3)
     {
-     three.push(courses[i].films);
+     three.push(academyMembers[i].name);
     }
 }
     return three;
 }
-console.log(getAcademyMembers(academyMembers));
+console.log(getAcademyFilms(academyMembers));
+
+//--------------------------------------------------------------------------
+
+function getActorBob(academyMembers) 
+{
+    let idNum = academyMembers.length;
+    let actorBob = [];
+
+for(let i = 0; i < idNum; i++)
+{
+
+    if (academyMembers[i].name.indexOf("Bob")>=0)
+    {
+     actorBob.push(academyMembers[i].name);
+    }
+}
+    return actorBob;
+}
+console.log(getActorBob(academyMembers));
+
+//--------------------------------------------------------------------------
+
+
+function getFilmA(academyMembers) 
+{
+    let idNum = academyMembers.length;
+    let filmA = [];
+
+for(let i = 0; i < idNum; i++)
+{
+
+    if (academyMembers[i].films.length.indexOf(0,1)=="A")
+    {
+     filmA.push(academyMembers[i].name);
+    }
+}
+    return filmA;
+}
+console.log(getFilmA(academyMembers));
+
+
